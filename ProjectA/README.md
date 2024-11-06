@@ -18,12 +18,16 @@ Dataset distillation is an emerging technique aimed at condensing large datasets
 ### 1. Attention Matching
 In Attention Matching, the objective is to align the attention maps of the real and synthetic data. This technique aims to preserve the regions in images that models consider important for classification, ensuring critical features are retained in the distilled dataset.
 
-### 2. Distribution Matching
+### 2. Trajectory Matching
+In Trajectory Matching, we use the Prioritize Alignment (PA) method to filter the misaligned information, which is introduced in the information extraction and information embedding stage when we are doing data distilliation. We apply the PA method on MNIST dataset, but the result is not satisfying due to some reasons. 
+
+### 3. Distribution Matching
 Distribution Matching is based on Maximum Mean Discrepancy (MMD), which seeks to minimize the distribution difference between real and synthetic data. This method often results in higher classification accuracy and better generalization on test data by closely aligning the synthetic dataset with the real data distribution.
 
 ## Results Summary
 
 - **Attention Matching**: Achieved moderate test accuracy (50-65%) on the MNIST and MHIST datasets. The synthetic images generated show identifiable class features, but with some noise.
+- **Trajectory Matching**: Achieved poor test accuracy (50-60%) on the MNIST dataset. But will achieve a much better accuracy (more than 95%) if the synthetic dataset is initialized by real data.
 - **Distribution Matching**: Outperformed Attention Matching, reaching up to 97.3% accuracy on MNIST, closely approximating the performance of models trained on real data. This method also produced visually consistent synthetic images with clearer intra-class distinctions.
 
 ## Repository Structure
