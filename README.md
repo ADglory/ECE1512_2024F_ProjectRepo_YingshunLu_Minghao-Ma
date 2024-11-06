@@ -1,2 +1,2 @@
-# ECE1512_2024F_ProjectRepo_YingshunLu_Minghao-Ma
+# ECE1512_2024F_ProjectRepo_YingshunLu_MinghaoMa
 1512 project1
