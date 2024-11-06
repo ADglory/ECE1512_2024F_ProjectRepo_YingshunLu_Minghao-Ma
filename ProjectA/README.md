@@ -47,8 +47,6 @@ Distribution Matching is based on Maximum Mean Discrepancy (MMD), which seeks to
 - PyTorch
 - NumPy
 - Matplotlib
-- Additional libraries as listed in `requirements.txt`
 
-Install the required packages with:
-```bash
-pip install -r requirements.txt
+## Running Experiments
+- Download Datasets: Ensure that MNIST and MHIST datasets are downloaded and stored in the data/ directory.
